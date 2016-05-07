@@ -1,0 +1,24 @@
+WebSite:
+  ports:
+  - 85:8080
+  labels:
+    io.rancher.scheduler.global: 'true'
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - Tomcat:Tomcat
+  stdin_open: true
+Tomcat:
+  ports:
+  - 80:8080/tcp
+  environment:
+    TOMCAT_PASS: Eez949pNu2uK6CqP3
+  labels:
+    io.rancher.scheduler.global: 'true'
+    io.rancher.container.pull_image: always
+  tty: true
+  hostname: web
+  image: tutum/tomcat:8.0
+  volumes:
+  - website:/tomcat/webapps
+  stdin_open: true
