@@ -1,3 +1,8 @@
+.catalog:
+  name: "MongoDB"
+  version: "Tomcat 8"
+  description: "Tomcat with unique volume"
+  minimum_rancher_version: v0.46.0
 WebSite:
   load_balancer_config:
     haproxy_config: {}
