@@ -24,6 +24,11 @@
       required: true
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
+    - variable: "adminer-port"
+      type: string
+      required: true
+      label: "Port for adminer"
+      description: "Database management in a single PHP file"
 galera:
   scale: 3
   metadata:
