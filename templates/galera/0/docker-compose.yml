@@ -51,7 +51,7 @@ galera-lb:
   stdin_open: true
 adminer:
   ports:
-  - 80:${adminer-port}/tcp
+    - 80:888/tcp
   labels:
     io.rancher.container.pull_image: always
   tty: true
