@@ -21,6 +21,6 @@ Once deployed, use a mysql client to connect:
 ### adminer
 
 `host : galera-lb`
-`database : <database>``
+`database : <database>`
 `user : <user>`
 `passwd : <passwd>`
