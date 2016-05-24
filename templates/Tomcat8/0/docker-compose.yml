@@ -1,16 +1,12 @@
-WebSite:
+Tomcat-lb:
   ports:
-  - 85:8080
-  labels:
-    io.rancher.scheduler.global: 'true'
+  - 80:8080
   tty: true
   image: rancher/load-balancer-service
   links:
   - Tomcat:Tomcat
   stdin_open: true
 Tomcat:
-  ports:
-  - 80:8080/tcp
   environment:
     TOMCAT_PASS: "${password}"
   labels:
