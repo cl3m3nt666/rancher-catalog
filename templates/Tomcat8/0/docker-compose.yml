@@ -17,5 +17,5 @@ Tomcat:
   image: tutum/tomcat:8.0
   volumes:
   - website:/tomcat/webapps
-  - tomcat_config:/tomcat/conf
+  - tomcatConfig:/tomcat/conf
   stdin_open: true
