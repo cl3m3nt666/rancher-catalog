@@ -6,6 +6,8 @@ Tomcat-lb:
   links:
   - Tomcat:Tomcat
   stdin_open: true
+  labels:
+    io.rancher.scheduler.affinity:host_label: lb=true
 Tomcat:
   environment:
     TOMCAT_PASS: "${password}"
@@ -15,8 +17,6 @@ Tomcat:
   tty: true
   hostname: web
   image: tutum/tomcat:8.0
-  labels:
-    io.rancher.scheduler.affinity:host_label: lb=true  
   volumes:
   - website:/tomcat/webapps
   - tomcatConfig:/tomcat/conf
