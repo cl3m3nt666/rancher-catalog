@@ -1,0 +1,12 @@
+maildev:
+  image: djfarrelly/maildev
+  ports:
+  - ${SMTP_PORT}:1025/tcp
+  - ${UI_PORT}:1080/tcp
+  read_only: true
+  log_opt:
+    max-size: '50m'
+  volumes:
+  - /devmail:/config
+  cpu_shares: 256
+  mem_limit: 134217728
