@@ -10,8 +10,8 @@
     default: 1025
     type: int
 - variable: UI_PORT
-  description: 'UI port'
-  label: 'Port:'
-  required: true
-  default: 1080
-  type: int
+    description: 'UI port'
+    label: 'Port:'
+    required: true
+    default: 1080
+    type: int

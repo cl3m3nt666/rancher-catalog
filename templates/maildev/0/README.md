@@ -1,6 +1,7 @@
 # Maildev
 
 MailDev is a simple way to test your projects' emails during development with an easy to use web interface that runs on your machine.
+https://github.com/djfarrelly/MailDev http://danfarrelly.nyc/MailDev/
 
 ## Usage
 

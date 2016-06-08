@@ -1,4 +1,4 @@
 name: Maildev
-description: 'SMTP Server + Web Interface for viewing and testing emails during development.https://github.com/djfarrelly/MailDev http://danfarrelly.nyc/MailDev/'
+description: 'SMTP Server + Web Interface for viewing and testing emails during development.'
 category: Utils
 version: latest
