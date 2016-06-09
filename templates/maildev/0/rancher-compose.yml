@@ -4,14 +4,16 @@
   uuid: maildev-0
   questions:
     - variable: SMTP_PORT
-      description: 'SMTP port'
-      label: 'Port:'
-      required: true
-      default: 1025
-      type: int
-  - variable: UI_PORT
-      description: 'UI port'
-      label: 'Port:'
-      required: true
-      default: 1080
-      type: int
+    description: 'SMTP port'
+    label: 'SMTP Port :'
+    required: true
+    default: 25
+    type: int
+    - variable: UI_PORT
+    description: 'UI port'
+    label: 'UI Port:'
+    required: true
+    default: 80
+    type: int
+maildev:
+  scale: 1

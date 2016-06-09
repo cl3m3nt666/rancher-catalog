@@ -1,9 +1,12 @@
 maildev:
   image: djfarrelly/maildev
   ports:
-    - ${SMTP_PORT}:1025/tcp
-    - ${UI_PORT}:1080/tcp
+    - ${SMTP_PORT}:25/tcp
+    - ${UI_PORT}:80/tcp
   read_only: true
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
   log_opt:
     max-size: '50m'
   volumes:
