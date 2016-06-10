@@ -11,5 +11,3 @@ maildev:
     max-size: '50m'
   volumes:
     - /devmail:/config
-  cpu_shares: 256
-  mem_limit: 134217728
