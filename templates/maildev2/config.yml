@@ -1,4 +1,4 @@
 name: Maildev
-description: 'SMTP Mock'
+description: 'SMTP Server + Web Interface for viewing and testing emails during development.'
 category: Utils
 version: latest

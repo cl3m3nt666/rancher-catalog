@@ -3,12 +3,12 @@
   version: latest
   uuid: maildev-0
   questions:
-  - variable: DOMAIN
-    description: 'Domain name'
-    label: 'Domain:'
+  - variable: UI_PORT
+    description: 'UI port'
+    label: 'Port:'
     required: true
-    default: vibioh.fr
-    type: string
+    default: 1080
+    type: int
   - variable: SMTP_PORT
     description: 'SMTP port'
     label: 'Port:'
