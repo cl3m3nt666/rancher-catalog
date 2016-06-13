@@ -14,8 +14,6 @@ WebSite:
     lb_cookie_stickiness_policy:
       indirect: true
       cookie: sticky
-      nocache: true
-      postonly: true
     haproxy_config: {}
   health_check:
     port: 42
