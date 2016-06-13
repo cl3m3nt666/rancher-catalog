@@ -12,7 +12,6 @@ Tomcat:
   environment:
     TOMCAT_PASS: "${password}"
   labels:
-    io.rancher.scheduler.global: 'true'
     io.rancher.container.pull_image: always
   tty: true
   hostname: web
