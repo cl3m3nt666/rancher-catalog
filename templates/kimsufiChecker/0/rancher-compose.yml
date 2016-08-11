@@ -1,0 +1,26 @@
+.catalog:
+  name: "kimsufiChecker"
+  version: "v1"
+  description: "Auto checker for srv ovh kimsufi - https://github.com/cl3m3nt666/kimsufi-availability"
+  minimum_rancher_version: v0.46.0
+  questions:
+    - variable: "srv"
+      type: string
+      required: true
+      label: "reference Kimsufi srv"
+      description: "reference Kimsufi srv"
+  - variable: "zone"
+    type: string
+    required: false
+    label: "geographical zones "
+    description: "geographical zones"
+  - variable: "token"
+    type: string
+    required: true
+    label: "Telegram token"
+    description: "Telegram token"
+  - variable: "id"
+    type: string
+    required: true
+    label: "Telegram id"
+    description: "Telegram id"
