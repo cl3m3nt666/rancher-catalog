@@ -1,5 +1,5 @@
-name: Tomcat
+name: kimsufiChecker
 description: |
-  The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket specifications are developed under the Java Community Process.
-version: v8
-category: Web
+  Small bash script for check kimsufi availability and notify by telegram - https://github.com/cl3m3nt666/kimsufi-availability
+version: v1
+category: Other
