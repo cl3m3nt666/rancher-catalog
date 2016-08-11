@@ -9,18 +9,18 @@
       required: true
       label: "reference Kimsufi srv"
       description: "reference Kimsufi srv"
-  - variable: "zone"
-    type: string
-    required: false
-    label: "geographical zones "
-    description: "geographical zones"
-  - variable: "token"
-    type: string
-    required: true
-    label: "Telegram token"
-    description: "Telegram token"
-  - variable: "id"
-    type: string
-    required: true
-    label: "Telegram id"
-    description: "Telegram id"
+    - variable: "zone"
+      type: string
+      required: false
+      label: "geographical zones "
+      description: "geographical zones"
+    - variable: "token"
+      type: string
+      required: true
+      label: "Telegram token"
+      description: "Telegram token"
+    - variable: "id"
+      type: string
+      required: true
+      label: "Telegram id"
+      description: "Telegram id"
