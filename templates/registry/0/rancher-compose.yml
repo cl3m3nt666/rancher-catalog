@@ -1,0 +1,11 @@
+.catalog:
+  name: "Registry"
+  version: "v1"
+  description: "Registry docker"
+  minimum_rancher_version: v0.46.0
+  questions:
+    - variable: "hostname"
+      type: string
+      required: true
+      label: "ip/domain"
+      description: "ip or domain"

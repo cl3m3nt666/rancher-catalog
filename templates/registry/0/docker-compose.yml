@@ -1,0 +1,13 @@
+registry:
+  image: registry:2
+  ports:
+  - 5000:5000/tcp
+registry-web:
+  image: hyper/docker-registry-web
+  environment:
+    REGISTRY_URL: "http://registry:5000/v2"
+    REGISTRY_NAME: "${hostname}:5000"
+  links:
+    - registry
+  ports:
+  - 8080:8080/tcp
