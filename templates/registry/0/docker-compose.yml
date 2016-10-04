@@ -3,8 +3,6 @@ registry:
   labels:
     io.rancher.scheduler.affinity:host_label: registry=true
   environment:
-    REGISTRY_URL: "http://registry:5000/v2"
-    REGISTRY_NAME: "${hostname}:5000"
     REGISTRY_AUTH: htpasswd
     REGISTRY_AUTH_HTPASSWD_REALM: Registry Realm
     REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
@@ -14,6 +12,9 @@ registry:
   - 5000:5000/tcp
 registry-web:
   image: hyper/docker-registry-web
+  environment:
+    REGISTRY_URL: "http://registry:5000/v2"
+    REGISTRY_NAME: "${hostname}:5000"
   links:
     - registry
   ports:
