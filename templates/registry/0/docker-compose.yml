@@ -15,6 +15,7 @@ registry-web:
   environment:
     REGISTRY_URL: "http://registry:5000/v2"
     REGISTRY_NAME: "${hostname}:5000"
+    REGISTRY_BASIC_AUTH: "${pass}"
   links:
     - registry
   ports:

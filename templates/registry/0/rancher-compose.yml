@@ -9,3 +9,8 @@
       required: true
       label: "ip/domain"
       description: "ip or domain"
+    - variable: "pass"
+      type: string
+      required: true
+      label: "registry password for web ui"
+      description: "password must be encode in base64 format : admin:admin"
