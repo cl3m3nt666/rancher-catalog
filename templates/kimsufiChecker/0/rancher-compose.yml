@@ -1,6 +1,6 @@
 .catalog:
   name: "kimsufiChecker"
-  version: "v1"
+  version: "v0.1"
   description: "Auto checker for srv ovh kimsufi - https://github.com/cl3m3nt666/kimsufi-availability"
   minimum_rancher_version: v0.46.0
   questions:
@@ -12,7 +12,7 @@
     - variable: "zone"
       type: string
       required: false
-      label: "geographical zones "
+      label: "geographical zones ex:rbx"
       description: "geographical zones"
     - variable: "token"
       type: string
@@ -24,3 +24,23 @@
       required: true
       label: "Telegram id"
       description: "Telegram id"
+    - variable: "sleep"
+      type: string
+      required: true
+      label: "Time sleep"
+      description: "Time sleep between check availability (in seconde)"
+      default: 1
+    - variable: "renotify"
+      type: string
+      required: true
+      label: "Time for re-notify user"
+      description: "Time for re-notify user (in seconde)"
+      default: 100
+
+environment:
+  SERVER_WARN: 143sys1
+  ZONE: rbx
+  TOKEN:
+  USERID:
+  TIMESLEEP: 1
+  TIMERENOTIFY: 60

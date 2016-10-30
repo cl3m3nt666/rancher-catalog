@@ -1,5 +1,5 @@
 name: kimsufiChecker
 description: |
   Small bash script for check kimsufi availability and notify by telegram - https://github.com/cl3m3nt666/kimsufi-availability
-version: v1
+version: v0.1
 category: Other

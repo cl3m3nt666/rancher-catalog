@@ -1,22 +1,9 @@
-Tomcat-lb:
-  ports:
-  - 80:8080
-  tty: true
-  image: rancher/load-balancer-service
-  links:
-  - Tomcat:Tomcat
-  stdin_open: true
-  labels:
-    io.rancher.scheduler.affinity:host_label: lb=true
-Tomcat:
+kimsufi :
+  image: cl3m3nt/kimsufi-availability:v0.1
   environment:
-    TOMCAT_PASS: "${password}"
-  labels:
-    io.rancher.container.pull_image: always
-  tty: true
-  hostname: web
-  image: tutum/tomcat:8.0
-  volumes:
-  - website:/tomcat/webapps
-  - tomcatConfig:/tomcat/conf
-  stdin_open: true
+    SERVER_WARN: "${srv}"
+    ZONE: "${zone}"
+    TOKEN: "${token}"
+    USERID: "${id}"
+    TIMESLEEP: "${sleep}"
+    TIMERENOTIFY: "${renotify}"
